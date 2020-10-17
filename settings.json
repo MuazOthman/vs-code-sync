@@ -103,9 +103,6 @@
             "value": "#42b883"
         }
     ],
-    "[javascript]": {
-        "editor.defaultFormatter": "HookyQR.beautify"
-    },
     "workbench.iconTheme": "vscode-icons",
     "[xml]": {
         "editor.defaultFormatter": "redhat.vscode-xml"
@@ -120,12 +117,108 @@
     "gitProjectManager.displayProjectPath": true,
     "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
     "gitProjectManager.openInNewWindow": true,
-    "aws.profile": "profile:default",
+    "aws.profile": "profile:burton",
     "aws.onDefaultRegionMissing": "add",
     "beautify.ignore": "",
     "editor.largeFileOptimizations": false,
     "githubIssues.workingIssueBranch": "${user}/${issueNumber}issue",
     "git.detectSubmodules": false,
-    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7YmFzaWM7YXJyb3dzMjtmbG93Y2hhcnQ7ZXI7dW1sO2F3czQ7YnBtblwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W1wiRkZGRkZGXCIsXCIwMDAwMDBcIl0sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjoxMTAwLFwiaGVpZ2h0XCI6ODUwfSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
-    "serverlessIDE.telemetry.enableTelemetry": false
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7YmFzaWM7YXJyb3dzMjtmbG93Y2hhcnQ7ZXI7dW1sO2F3czQ7YnBtblwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W1wiMDAwMDAwXCIsXCJGRkZGRkZcIl0sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjoxMTAwLFwiaGVpZ2h0XCI6ODUwfSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
+    "serverlessIDE.telemetry.enableTelemetry": false,
+    "git.autofetch": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[g4]": {
+        "editor.defaultFormatter": "mike-lischke.vscode-antlr4"
+    },
+    "editor.maxTokenizationLineLength": 10000,
+    "editor.formatOnSave": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "hediet.vscode-drawio.theme": "dark",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "atlascode.jira.enabled": true,
+    "atlascode.bitbucket.enabled": false,
+    "atlascode.jira.jqlList": [
+        {
+            "id": "e44223f5-9e3f-4b44-8d75-10382d2f112c",
+            "enabled": true,
+            "name": "My azavar Issues",
+            "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+            "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+            "monitor": true
+        },
+        {
+            "id": "3d0a707d-9556-493e-9bdb-af84e787f46f",
+            "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+            "filterId": "10000",
+            "name": "Filter for LG board",
+            "query": "project = LG ORDER BY Rank ASC",
+            "enabled": true,
+            "monitor": true
+        },
+        {
+            "id": "be31a7d7-7901-4faf-a95f-6e776099f60e",
+            "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+            "filterId": "10001",
+            "name": "Filter for LI board",
+            "query": "project = LI ORDER BY Rank ASC",
+            "enabled": true,
+            "monitor": true
+        },
+        {
+            "id": "577089b6-ff1b-40ad-be8e-9112a215807e",
+            "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+            "name": "Backend - Open",
+            "query": "project = LG AND status in (\"In Progress\", \"Selected for Development\") AND parent = LG-33 ORDER BY created DESC",
+            "enabled": true,
+            "monitor": true
+        }
+    ],
+    "atlascode.jira.lastCreateSiteAndProject": {
+        "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+        "projectKey": "LG"
+    },
+    "antlr4.format": {
+        "alignTrailingComments": false,
+        "allowShortBlocksOnASingleLine": true,
+        "breakBeforeBraces": false,
+        "columnLimit": 100,
+        "continuationIndentWidth": 4,
+        "indentWidth": 4,
+        "keepEmptyLinesAtTheStartOfBlocks": false,
+        "maxEmptyLinesToKeep": 1,
+        "reflowComments": true,
+        "spaceBeforeAssignmentOperators": true,
+        "tabWidth": 4,
+        "useTab": true,
+        "alignColons": "none",
+        "singleLineOverrulesHangingColon": true,
+        "allowShortRulesOnASingleLine": true,
+        "alignSemicolons": "none",
+        "breakBeforeParens": false,
+        "ruleInternalsOnSingleLine": false,
+        "minEmptyLines": 0,
+        "groupedAlignments": true,
+        "alignFirstTokens": false,
+        "alignLexerCommands": false,
+        "alignActions": false,
+        "alignLabels": true,
+        "alignTrailers": false
+    },
+    "antlr4.referencesCodeLens.enabled": true,
+    "cSpell.userWords": [
+        "Muaz"
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "yaml.schemas": {
+        "file:///c%3A/Users/mothman/.vscode/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "workbench.colorTheme": "One Dark Pro"
 }
