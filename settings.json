@@ -117,11 +117,8 @@
     "gitProjectManager.displayProjectPath": true,
     "bracket-pair-colorizer-2.forceUniqueOpeningColor": true,
     "gitProjectManager.openInNewWindow": true,
-    "aws.profile": "profile:burton",
     "aws.onDefaultRegionMissing": "add",
-    "beautify.ignore": "",
     "editor.largeFileOptimizations": false,
-    "githubIssues.workingIssueBranch": "${user}/${issueNumber}issue",
     "git.detectSubmodules": false,
     "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7YmFzaWM7YXJyb3dzMjtmbG93Y2hhcnQ7ZXI7dW1sO2F3czQ7YnBtblwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W1wiMDAwMDAwXCIsXCJGRkZGRkZcIl0sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjoxMTAwLFwiaGVpZ2h0XCI6ODUwfSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
     "serverlessIDE.telemetry.enableTelemetry": false,
@@ -132,6 +129,9 @@
     },
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
     },
     "[g4]": {
         "editor.defaultFormatter": "mike-lischke.vscode-antlr4"
@@ -179,6 +179,22 @@
             "query": "project = LG AND status in (\"In Progress\", \"Selected for Development\") AND parent = LG-33 ORDER BY created DESC",
             "enabled": true,
             "monitor": true
+        },
+        {
+            "id": "a7fde983-ae58-4c65-9c18-c7dcc530b959",
+            "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+            "name": "LG Open issues",
+            "query": "project = LG AND status in (\"In Progress\", \"Selected for Development\",Backlog) ORDER BY created DESC",
+            "enabled": true,
+            "monitor": true
+        },
+        {
+            "id": "d49671ad-2e8b-4d15-badc-8af24ba1a209",
+            "siteId": "bbbf3152-4567-4af7-ad1b-2a13e64a0261",
+            "name": "LFL",
+            "query": "project = LG AND status in (Backlog, \"In Progress\", \"Selected for Development\") AND (parent in (LG-47, LG-48, LG-62, LG-63, LG-151, LG-159, LG-177) OR issuekey in (LG-47, LG-48, LG-62, LG-63, LG-151, LG-159)) ORDER BY created DESC",
+            "enabled": true,
+            "monitor": true
         }
     ],
     "atlascode.jira.lastCreateSiteAndProject": {
@@ -214,11 +230,20 @@
     },
     "antlr4.referencesCodeLens.enabled": true,
     "cSpell.userWords": [
-        "Muaz"
+        "Localgov",
+        "Muaz",
+        "fawaz"
     ],
     "todo-tree.tree.showScanModeButton": false,
     "yaml.schemas": {
-        "file:///c%3A/Users/mothman/.vscode/extensions/atlassian.atlascode-2.8.3/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///home/ec2-user/.vscode-server/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
-    "workbench.colorTheme": "One Dark Pro"
+    "workbench.colorTheme": "One Dark Pro",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+    "editor.suggestSelection": "first",
+    "terminal.integrated.fontFamily": "MesloLGM NF",
+    "sql-formatter.uppercase": true,
+    "remote.SSH.remotePlatform": {
+        "Cloud9": "linux"
+    }
 }
