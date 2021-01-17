@@ -2,7 +2,7 @@
     "git.enableSmartCommit": true,
     "editor.minimap.enabled": true,
     "window.menuBarVisibility": "default",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
     "mssql.connections": [
         {
             "server": ".\\SQLEXPRESS",
@@ -236,14 +236,16 @@
     ],
     "todo-tree.tree.showScanModeButton": false,
     "yaml.schemas": {
-        "file:///home/ec2-user/.vscode-server/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+        "file:///Users/muazothman/.vscode/extensions/atlassian.atlascode-2.8.5/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
     },
     "workbench.colorTheme": "One Dark Pro",
     "terminal.integrated.shell.windows": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
     "editor.suggestSelection": "first",
-    "terminal.integrated.fontFamily": "MesloLGM NF",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     "sql-formatter.uppercase": true,
     "remote.SSH.remotePlatform": {
         "Cloud9": "linux"
-    }
+    },
+    "importCost.timeout": 30000,
+    "editor.accessibilitySupport": "off"
 }
